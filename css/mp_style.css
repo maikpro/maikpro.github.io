@@ -1,0 +1,254 @@
+/* --------------------------------------------------------
+version: 1.0
+author: Maik Proba
+email: maik.proba@gmail.com
+website: https://github.com/maikpro
+----------------------------------------------------------*/
+
+/*Allgemein*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+::selection{
+    color: #000;
+    background-color: #02fd84;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+h1, h2, h3{
+    font-weight: 300;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #02fd84;
+}
+
+p{
+    line-height: 2.25rem;
+}
+
+p, .skills, #copyright{
+    font-weight: 100;
+    margin: 2rem 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+li a{
+    line-height: 1.5;
+}
+/*======================================*/
+.mp-btn{
+    border: 1px solid #02fd84;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+
+.logo{
+    margin: 4rem 0;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+}
+
+.mp-social-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialIcons{
+    display: flex;
+    /*width: 100%;*/
+    max-width: 30rem;
+}
+
+.socialIcons a i{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.mp-spacer {
+    display: inline-block;
+    vertical-align: super;
+    max-width: 20rem;
+    height: 1px;
+    width:100%;
+    background-color: #fff;
+}
+
+.mp-container, .mp-social-container{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+}
+
+.mp-container{
+    flex-direction: column;
+}
+
+.mp-block a img {
+    margin-top: 2rem;
+}
+
+.mp-block a:first-child img {
+    margin-top: 0;
+}
+
+.mp-block, .projekt, .mp-block ul{
+    margin: 2rem 0;
+}
+
+.intro {
+    margin: 0;
+}
+
+.space{
+    margin-top: 8rem;
+}
+
+.skills{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill{
+    margin: .25rem;
+    padding: .25rem;
+    background-color: #555;
+}
+
+.skill:hover{
+    background-color: #444;
+}
+
+.projekt{
+    margin: 2rem 0;
+}
+
+.projekt h2{
+    margin-top: 2rem;
+}
+
+.footer-spacer{
+    width: 100%;
+    height: 1px;
+    background-color: #02fd84;
+}
+
+.footer{
+    width: 100%;
+    margin: 6rem 0 3rem 0;
+}
+
+.footer .logo{
+    margin: 0;
+}
+
+.kontakt{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zuerueck{
+    margin: 2rem 0;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0;
+    font-size: .75rem;
+}
+
+
+
+/*Breakpoints*/
+@media only screen and (min-width: 768px) {  
+    
+}
+
+@media only screen and (min-width: 992px) {  
+    .mp-container{
+        justify-content: space-between;
+    }
+    
+    .mp-container, .mp-social-container{
+        padding: 0 4rem;
+        flex-direction: row;
+    }
+
+    .mp-container .projekt:nth-child(2){
+        margin-left: 2rem;
+    }
+
+    .mp-block{
+        max-width: 45%;
+    }
+
+    .intro{
+        margin: 0;
+        width: 50%;
+        margin-left: 5rem;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .intro h1{
+        font-size: 3rem;
+        margin: 2.5rem 0;
+    }
+
+    .skills{
+        height: 4em;
+        margin-top: 6rem;
+    }
+
+    .skills-projekt{
+        margin-top: 2rem;
+    }
+
+    .projekte-intro{
+        flex-direction: column;
+    }
+
+    .projekt{
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {  
+    
+}
