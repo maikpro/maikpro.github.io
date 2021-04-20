@@ -111,7 +111,7 @@ li a{
     flex-direction: column;
 }
 
-.mp-block a img {
+.mp-block a img, .mp-block img {
     margin-top: 2rem;
 }
 
@@ -132,7 +132,7 @@ li a{
 }
 
 .skills{
-    max-width: 100%;
+    max-width: 100%; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -145,6 +145,7 @@ li a{
 }
 
 .skill:hover{
+    cursor: pointer;
     background-color: #444;
 }
 
