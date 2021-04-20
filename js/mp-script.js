@@ -1,7 +1,7 @@
 console.log("script eingebunden!");
 
 var copyright = document.getElementById("copyright");
-copyright.innerText = "© " + new Date().getFullYear() + " mpcoding   -   made with ❤ by Maik Proba";
+copyright.innerText = "© " + new Date().getFullYear() + " mpcoding   -   👨‍💻 by Maik Proba";
 
 /*On Scroll Effect*/
 const allContainers = document.querySelectorAll("#mpEffect");
