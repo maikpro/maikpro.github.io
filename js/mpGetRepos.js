@@ -1,5 +1,3 @@
-console.log("time to fetch some data from github....");
-
 //GET URL: https://api.github.com/users/maikpro/repos
 
 const url = "https://api.github.com/users/maikpro/repos";
@@ -11,9 +9,7 @@ function getData(url){
         if (this.readyState == 4 && this.status == 200) {
             var dataText = req.responseText; //hole dem Text aus der Antwort des Servers
             var data = JSON.parse(dataText); //Wandelt den JSON String in ein JSON-Object um.
-            //console.log(data);
             sortDataByDate(data);
-            console.log(data);
             viewData(data);
         }
     };
@@ -33,9 +29,6 @@ function viewData(data){
         }
 
         let project = data[i];
-
-        console.log(mpContainer)
-
         createProjectBlock(mpContainer, project);
     }
 }
