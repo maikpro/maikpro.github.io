@@ -153,8 +153,16 @@ li a{
     margin: 2rem 0;
 }
 
+.github{
+    /*border: 1px solid #02fd84;*/
+}
+
 .projekt h2{
     margin-top: 2rem;
+}
+
+#githubProjects > div:nth-child(even){
+    margin-top: 8rem;
 }
 
 .footer-spacer{
