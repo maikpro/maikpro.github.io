@@ -24,7 +24,7 @@ body{
 }
 
 h1, h2, h3{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 img{
@@ -46,7 +46,7 @@ p{
 }
 
 p, .skills, #copyright{
-    font-weight: 100;
+    font-weight: 300;
     margin: 2rem 0;
 }
 
@@ -111,7 +111,7 @@ li a{
     flex-direction: column;
 }
 
-.mp-block a img, .mp-block img {
+.mp-block a img, .mp-block img, .mp-block iframe {
     margin-top: 2rem;
 }
 
@@ -199,6 +199,11 @@ li a{
     font-size: .75rem;
 }
 
+.youtube{
+    width: 650px;
+    height: 400px;
+}
+
 
 
 /*Breakpoints*/
@@ -240,7 +245,7 @@ li a{
     }
 
     .skills{
-        height: 4em;
+        height: 2em;
         margin-top: 6rem;
     }
 
@@ -250,6 +255,10 @@ li a{
 
     .projekte-intro{
         flex-direction: column;
+    }
+
+    .projekte-intro-links {
+        flex-direction: row;
     }
 
     .projekt{

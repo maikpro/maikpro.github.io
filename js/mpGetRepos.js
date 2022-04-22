@@ -4,11 +4,11 @@ const url = "https://api.github.com/users/maikpro/repos";
 getData(url);
 
 function getData(url){
-    var req = new XMLHttpRequest();
+    const req = new XMLHttpRequest();
     req.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            var dataText = req.responseText; //hole dem Text aus der Antwort des Servers
-            var data = JSON.parse(dataText); //Wandelt den JSON String in ein JSON-Object um.
+            const dataText = req.responseText; // hole dem Text aus der Antwort des Servers
+            const data = JSON.parse(dataText); // Wandelt den JSON String in ein JSON-Object um.
             sortDataByDate(data);
             viewData(data);
         }
@@ -19,8 +19,8 @@ function getData(url){
 }
 
 function viewData(data){
-    var anzahl=4; //vier Repos sollen angezeigt werden.
-    var mpContainer;
+    const anzahl=4; // vier Repos sollen angezeigt werden.
+    let mpContainer;
     for(let i=0; i<anzahl;i++){
 
         //Erstelle mp-container
@@ -41,29 +41,29 @@ function sortDataByDate(data){
 }
 
 function createProjectContainer(){
-    var parent = document.getElementById("githubProjects");
-    var block = document.createElement("div");
+    const parent = document.getElementById("githubProjects");
+    const block = document.createElement("div");
     block.classList.add("mp-container");
     parent.appendChild(block);
     return block;
 }
 
 function createProjectBlock(container, project){
-    var block = document.createElement("div");
+    const block = document.createElement("div");
     block.classList.add("projekt", "github");
     block.id = "mpEffect";
 
-    //Projektname
-    var h2 = document.createElement("h2");
+    // Projektname
+    const h2 = document.createElement("h2");
     h2.textContent = project.name;
 
-    //Beschreibung
-    var p = document.createElement("p");
-    var created_date = new Date(project.created_at)
+    // Beschreibung
+    const p = document.createElement("p");
+    const created_date = new Date(project.created_at)
     p.innerHTML = project.description + "<br>erstellt am: " + created_date.toLocaleDateString();
 
-    //Verlinkung
-    var a = document.createElement("a");
+    // Verlinkung
+    const a = document.createElement("a");
     a.classList.add("mp-btn");
     a.setAttribute("href", project.html_url);
     a.setAttribute("target", "_blank");
