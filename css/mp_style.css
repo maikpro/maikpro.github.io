@@ -46,7 +46,7 @@ p{
 }
 
 p, .skills, #copyright{
-    font-weight: 300;
+    font-weight: 400;
     margin: 2rem 0;
 }
 
@@ -139,8 +139,11 @@ li a{
 }
 
 .skill{
+    text-align: center;
+    min-width: 40px;
+    border-radius: 20px;
     margin: .25rem;
-    padding: .25rem;
+    padding: .5rem;
     background-color: #555;
 }
 
@@ -151,10 +154,6 @@ li a{
 
 .projekt{
     margin: 2rem 0;
-}
-
-.github{
-    /*border: 1px solid #02fd84;*/
 }
 
 .projekt h2{
