@@ -3,19 +3,14 @@
 const url = "https://api.github.com/users/maikpro/repos";
 getData(url);
 
-function getData(url){
-    const req = new XMLHttpRequest();
-    req.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            const dataText = req.responseText; // hole dem Text aus der Antwort des Servers
-            const data = JSON.parse(dataText); // Wandelt den JSON String in ein JSON-Object um.
-            sortDataByDate(data);
-            viewData(data);
-        }
-    };
-    req.open("GET", url, true);
-    req.responseType = "text";
-    req.send();
+async function getData(url){
+    const response = await fetch(url);
+    if(response.ok){
+        const data = await response.json();
+        console.log(data);
+        sortDataByDate(data);
+        viewData(data);
+    }
 }
 
 function viewData(data){
