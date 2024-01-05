@@ -6,87 +6,96 @@ website: https://github.com/maikpro
 ----------------------------------------------------------*/
 
 /*Allgemein*/
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-::selection{
+:root {
+    --primary: #181818;
+    --secondary: #0299fd;
+    --tertiary: #f5f5f5;
+}
+
+::selection {
     color: #000;
-    background-color: #02fd84;
+    background-color: var(--secondary);
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary);
+    color: var(--tertiary);
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-weight: 400;
 }
 
-img{
+img {
     width: 100%;
     border-radius: 5px;
 }
 
-a{
-    color: #fff;
+a {
+    color: var(--tertiary);
     text-decoration: none;
 }
 
-a:hover{
-    color: #02fd84;
+a:hover {
+    color: var(--secondary);
 }
 
-p{
+p {
     line-height: 2.25rem;
 }
 
-p, .skills, #copyright{
+p,
+.skills,
+#copyright {
     font-weight: 400;
     margin: 2rem 0;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-li a{
+li a {
     line-height: 1.5;
 }
 /*======================================*/
-.mp-btn{
-    border: 1px solid #02fd84;
+.mp-btn {
+    border: 1px solid var(--secondary);
     border-radius: 5px;
     padding: 15px 10px;
 }
 
-
-.logo{
+.logo {
     margin: 4rem 0;
 }
 
-.logo img{
+.logo img {
     width: 80px;
     height: auto;
 }
 
-.mp-social-container{
+.mp-social-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.socialIcons{
+.socialIcons {
     display: flex;
     /*width: 100%;*/
     max-width: 30rem;
 }
 
-.socialIcons a i{
+.socialIcons a i {
     font-size: 1rem;
     margin-right: 1rem;
 }
@@ -96,22 +105,25 @@ li a{
     vertical-align: super;
     max-width: 20rem;
     height: 1px;
-    width:100%;
-    background-color: #fff;
+    width: 100%;
+    background-color: var(--tertiary);
 }
 
-.mp-container, .mp-social-container{
+.mp-container,
+.mp-social-container {
     max-width: 90rem;
     margin: 0 auto;
     padding: 0 1.5rem;
     display: flex;
 }
 
-.mp-container{
+.mp-container {
     flex-direction: column;
 }
 
-.mp-block a img, .mp-block img, .mp-block iframe {
+.mp-block a img,
+.mp-block img,
+.mp-block iframe {
     margin-top: 2rem;
 }
 
@@ -119,7 +131,9 @@ li a{
     margin-top: 0;
 }
 
-.mp-block, .projekt, .mp-block ul{
+.mp-block,
+.projekt,
+.mp-block ul {
     margin: 2rem 0;
 }
 
@@ -127,59 +141,59 @@ li a{
     margin: 0;
 }
 
-.space{
+.space {
     margin-top: 8rem;
 }
 
-.skills{
-    max-width: 100%; 
+.skills {
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.skill{
+.skill {
     text-align: center;
     min-width: 40px;
     border-radius: 20px;
-    margin: .25rem;
-    padding: .5rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #555;
 }
 
-.skill:hover{
+.skill:hover {
     cursor: pointer;
     background-color: #444;
 }
 
-.projekt{
+.projekt {
     margin: 2rem 0;
 }
 
-.projekt h2{
+.projekt h2 {
     margin-top: 2rem;
 }
 
-#githubProjects > div:nth-child(even){
+#githubProjects > div:nth-child(even) {
     margin-top: 8rem;
 }
 
-.footer-spacer{
+.footer-spacer {
     width: 100%;
     height: 1px;
-    background-color: #02fd84;
+    background-color: var(--secondary);
 }
 
-.footer{
+.footer {
     width: 100%;
     margin: 6rem 0 3rem 0;
 }
 
-.footer .logo{
+.footer .logo {
     margin: 0;
 }
 
-.kontakt{
+.kontakt {
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
@@ -187,51 +201,50 @@ li a{
     align-items: center;
 }
 
-.zuerueck{
+.zuerueck {
     margin: 2rem 0;
 }
 
-#copyright{
+#copyright {
     display: flex;
     flex-direction: row;
     margin: 1.5rem 0;
-    font-size: .75rem;
+    font-size: 0.75rem;
 }
 
-.youtube{
+.youtube {
     width: 350px;
     height: 200px;
 }
 
-
-
 /*Breakpoints*/
-@media only screen and (min-width: 768px) {  
-    .youtube{
+@media only screen and (min-width: 768px) {
+    .youtube {
         width: 650px;
         height: 400px;
     }
 }
 
-@media only screen and (min-width: 992px) {  
-    .mp-container{
+@media only screen and (min-width: 992px) {
+    .mp-container {
         justify-content: space-between;
     }
-    
-    .mp-container, .mp-social-container{
+
+    .mp-container,
+    .mp-social-container {
         padding: 0 4rem;
         flex-direction: row;
     }
 
-    .mp-container .projekt:nth-child(2){
+    .mp-container .projekt:nth-child(2) {
         margin-left: 2rem;
     }
 
-    .mp-block{
+    .mp-block {
         max-width: 45%;
     }
 
-    .intro{
+    .intro {
         margin: 0;
         width: 50%;
         margin-left: 5rem;
@@ -241,21 +254,21 @@ li a{
         justify-content: flex-end;
     }
 
-    .intro h1{
+    .intro h1 {
         font-size: 3rem;
         margin: 2.5rem 0;
     }
 
-    .skills{
+    .skills {
         height: 2em;
         margin-top: 2rem;
     }
 
-    .skills-projekt{
+    .skills-projekt {
         margin-top: 2rem;
     }
 
-    .projekte-intro{
+    .projekte-intro {
         flex-direction: column;
     }
 
@@ -263,15 +276,11 @@ li a{
         flex-direction: row;
     }
 
-    .projekt{
+    .projekt {
         width: 50%;
         margin: 0;
     }
-
-    
-    
 }
 
-@media (min-width: 1200px) {  
-    
+@media (min-width: 1200px) {
 }
