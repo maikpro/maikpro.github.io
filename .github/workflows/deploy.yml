@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: ''
+          BASE_PATH: '/maikpro.github.io'
         run: |
           npm run build
 
