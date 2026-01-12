@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/mp-website'
+          BASE_PATH: '/'
         run: |
           npm run build
 
