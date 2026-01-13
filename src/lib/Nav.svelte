@@ -19,7 +19,8 @@
 			<li>
 				<a
 					href="/about"
-					class="text-gray-600 transition-colors hover:text-gray-900 {$page.url.pathname === '/about'
+					class="text-gray-600 transition-colors hover:text-gray-900 {$page.url.pathname ===
+					'/about'
 						? 'font-semibold text-gray-900'
 						: ''}"
 				>
@@ -29,7 +30,8 @@
 			<li>
 				<a
 					href="/projects"
-					class="text-gray-600 transition-colors hover:text-gray-900 {$page.url.pathname === '/projects'
+					class="text-gray-600 transition-colors hover:text-gray-900 {$page.url.pathname ===
+					'/projects'
 						? 'font-semibold text-gray-900'
 						: ''}"
 				>

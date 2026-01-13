@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Linkedin, Github } from 'lucide-svelte';
+
 	function handleImageError(event: Event) {
 		const img = event.target as HTMLImageElement;
 		img.src = 'https://ui-avatars.com/api/?name=Maik&size=160&background=e5e7eb&color=374151';
@@ -20,9 +22,7 @@
 		/>
 	</div>
 
-	<h1 class="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">
-		👋 Hi, I'm Maik
-	</h1>
+	<h1 class="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">🙋🏻‍♂️ Hi, I'm Maik</h1>
 
 	<p class="mb-8 max-w-xl text-lg text-gray-600">
 		Welcome to my personal website. I'm a developer passionate about building great software.
@@ -35,7 +35,8 @@
 			rel="noopener noreferrer"
 			class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-white transition-colors hover:bg-gray-700"
 		>
-			💼 LinkedIn
+			<Linkedin size={20} />
+			LinkedIn
 		</a>
 		<a
 			href="https://github.com/maikpro"
@@ -43,10 +44,8 @@
 			rel="noopener noreferrer"
 			class="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3 text-gray-900 transition-colors hover:bg-gray-50"
 		>
-			💻 GitHub
+			<Github size={20} />
+			GitHub
 		</a>
 	</div>
 </section>
-
-
-
